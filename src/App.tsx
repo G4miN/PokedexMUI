@@ -1,15 +1,17 @@
-import './App.css'
-import NavbarComponent from './components/Navbar'
-import PokemonComponent from './components/Pokemon';
+import "./App.css";
+import NavbarComponent from "./components/Navbar";
+import Card from "./components/Card";
 
-function App() {
-
+export default function App() {
   return (
     <>
-    <NavbarComponent/>
-    <PokemonComponent/>
+      <NavbarComponent id="navbar-container" />
+      <div className="container">
+        <div id="content">
+          <Card />
+        </div>
+        <div id="content-info">klk</div>
+      </div>
     </>
-  )
+  );
 }
-
-export default App
