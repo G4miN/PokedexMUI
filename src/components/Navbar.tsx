@@ -1,4 +1,4 @@
-export default function NavbarComponent({ id }: { id: string }) {
+export default function Navbar({ id }: { id: string }) {
   return (
     <div>
       <nav className="navbar" id={id}>

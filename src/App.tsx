@@ -1,16 +1,20 @@
 import "./App.css";
-import NavbarComponent from "./components/Navbar";
+import Navbar from "./components/Navbar";
 import Card from "./components/Card";
-
+import CardInfo from "./components/CardInfo";
 export default function App() {
   return (
     <>
-      <NavbarComponent id="navbar-container" />
+      <Navbar id="navbar-container" />
       <div className="container">
         <div id="content">
           <Card />
+          <Card />
+          <Card />
         </div>
-        <div id="content-info">klk</div>
+        <div id="content-info">
+          <CardInfo />
+        </div>
       </div>
     </>
   );
