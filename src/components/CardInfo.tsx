@@ -11,13 +11,13 @@ export default function CardInfo() {
           />
           <div className="pokemon-cardInfo-details">
             <p className="pokemon-number-cardInfo" id="pokemon-num-cardInfo">
-              N°387
+              #395
             </p>
             <p className="pokemon-name-cardInfo" id="pokemon-name-cardInfo">
-              Turtwig
+              Empoleon
             </p>
             <p className="pokemon-type-cardInfo" id="poke-type-cardInfo">
-              Grass
+              Emperor Pokemon
             </p>
           </div>
         </div>

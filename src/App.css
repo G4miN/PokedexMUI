@@ -146,3 +146,29 @@ body {
 .CardInfo{
   background: red;
 }
+
+.pokemon-cardInfo-details{
+  display: grid;
+  place-items: center;
+  grid-template-rows: repeat(3, 30px);
+}
+
+.pokemon-number-cardInfo{
+  font-size: 15px;
+  font-weight: 500;
+  color: grey;
+}
+
+.pokemon-name-cardInfo{
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.pokemon-type-cardInfo{
+  color: #bcbdcd;
+}
+
+.pokemon-image-cardInfo{
+  position: relative;
+  top: -60px;
+}
