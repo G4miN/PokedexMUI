@@ -5,9 +5,14 @@ import CardInfo from "./components/CardInfo";
 export default function App() {
   return (
     <>
-      <Navbar id="navbar-container" />
+      <div className="main-nav-container">
+        <Navbar id="navbar-container" />
+      </div>
       <div className="container">
         <div id="content">
+          <Card />
+          <Card />
+          <Card />
           <Card />
           <Card />
           <Card />
