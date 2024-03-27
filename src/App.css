@@ -6,7 +6,7 @@
 :root{
   --main-radius:5px;
   --main-padding: 5px;
-  --floating-effect: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  --floating-effect: 0 10px 20px rgba(226, 221, 221, 0.19), 0 6px 6px rgba(165, 164, 164, 0.23);
   --pokemon-radius: 30px;
 }
 
@@ -17,9 +17,11 @@ body {
 .navbar ul {
   list-style: none;
   justify-content: space-evenly;
-  padding: 1px;
   display: grid;
-  grid-template-columns: repeat(7, 250px);
+  padding: 12px;
+  grid-template-columns: repeat(7, 191px);
+  transform: scale(0.9);
+  margin-left: -4.5rem;
 }
 
 @media screen and (max-width: 600px) {
@@ -30,24 +32,23 @@ body {
 }
 
 .navbar li {
-  flex-grow: 1;
+  text-align: center;
+  color: grey;
+  cursor: pointer;
+  transition: 0.5s;
+  border-bottom: 8px solid transparent;
 }
 
 .navbar a {
   color: grey;
   text-decoration: none;
-  /* font-size: 19px; */
-  padding: 15px 16px;
+  padding-bottom: 44px;
 }
 
 .navbar a:hover {
-  color: red;
-  border-bottom: 8px solid red;
-}
-
-.fas.fa-home, .fas.fa-gamepad, .fas.fa-record-vinyl, .fas.fa-layer-group, .fas.fa-tv, .fas.fa-trophy, .fas.fa-newspaper{
-  font-size: 31px;
-  padding: 20px;
+  color: #ff5350;
+  margin-bottom: 100%;
+  border-bottom: 5.3px solid #ff5350;
 }
 
 .container {
@@ -63,12 +64,12 @@ body {
 }
 
 #navbar-container{
-  grid-area: navbar-container;  
   background-color: white;  
   border-radius: 15px;
   height: 7rem;
   padding-top: var(--main-padding);
   box-shadow: var(--floating-effect);
+  width: 76rem;
 }
 
 #content{
@@ -166,8 +167,8 @@ body {
 }
 
 #pokemon-image-cardInfo{
-  width: 320px;
-  height: 300px;
+  width: 260px;
+  height: 250px;
   position: relative;
   top: -9rem;
 }
@@ -205,22 +206,79 @@ body {
   box-shadow: 0 10px 20px rgba(226, 221, 221, 0.19), 0 6px 6px rgba(165, 164, 164, 0.23);
   border-radius: var(--pokemon-radius);
   margin: 20px;
-  margin-top: 9rem;
+  margin-top: 11.8rem;
   margin-bottom: -3rem;
-  min-width: 33vw;
+  min-width: 30vw;
 }
 
 .main-nav-container{
-  margin-top: 1%;
+  margin-top: 2.5%;
+  transform: translate(5%, -5%);
 }
+
 .pokemon-abilities-info{
   display: grid;
   place-items: center;
   grid-template-columns: repeat(2, 5rem);
 }
+
 .pokemon-entry-details{
   font-style: normal;
   font-weight:450;
   padding-right: 50px;
   padding-left: 50px;
+}
+
+.fas.icon-pikachu{
+  background-image: url('./src/assets/pikachu_prev_ui_better.svg');
+}
+
+.fas.icon-pokeball{
+  background-image: url('./src/assets/pokeball_prev_ui.png');
+}
+
+.fas.icon-joystick{
+  background-image: url('./src/assets/joystick_prev_ui.png');
+}
+
+.fas.icon-card{
+  background-image: url('./src/assets/card_prev_ui.png');
+}
+
+.fas.icon-animation{
+  background-image: url('./src/assets/animation_prev_ui.png');
+}
+
+.fas.icon-trophy{
+  background-image: url('./src/assets/trophy_prev_ui.png');
+}
+
+.fas.icon-news{
+  background-image: url('./src/assets/news_prev_ui.png');
+  fill: red !important
+}
+
+.fas.icon-pikachu,.fas.icon-pokeball,.fas.icon-joystick,.fas.icon-card,.fas.icon-animation,.fas.icon-trophy,.fas.icon-news{
+  width: 45px;
+  height: 40px;
+  background-size: cover;
+  background-position: center;
+}
+
+.pipika{
+  fill: red !important;
+}
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: red !important;
+  fill: red !important;
+}
+.icon-pikachu_prev_ui_better {
+  width: 1.15625em;
+  fill: red !important;
+
 }
